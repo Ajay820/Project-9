@@ -1,0 +1,36 @@
+/* POPPINS FONT FAMILY */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+header{
+  background-color:#491bfe;
+}
+
+nav{
+  max-width:90%;
+  margin:10px auto;
+
+}
+
+.header-text{
+  display:flex;
+}
+
+.cards{
+  max-width:95%;
+  display:flex;
+  margin:0 auto;
+}
+
+.blog-card{
+  display:flex;
+  max-width:90%;
+  margin:0 auto;
+}
+
+
+
