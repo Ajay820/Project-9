@@ -6,6 +6,10 @@
   font-family: "Poppins", sans-serif;
 }
 
+body{
+  background-color:#f8f8fa;
+}
+
 header{
   background-color:#491bfe;
 }
@@ -16,21 +20,114 @@ nav{
 
 }
 
-.header-text{
+.header{
   display:flex;
+  justify-content:space-between;
+  align-items:center;
+  max-width:95%;
+  margin:0 auto;
+}
+
+.header-text{
+  color:#ffffff;
+}
+
+.header-text h2{
+  font-size:30px;
+}
+
+
+.header-image{
+  float:right;
+}
+
+.companies{
+  max-width:30%;
+  display:flex;
+  justify-content:space-around;
+}
+
+.companies-items{
+  text-decoration:none;
+  margin-top:10px;
+  color:#000000;
+}
+
+.card{
+  max-width:250px;
+  padding:15px;
+}
+
+.active{
+  background-color:#ffffff;
 }
 
 .cards{
   max-width:95%;
   display:flex;
+  justify-content:space-around;
   margin:0 auto;
+  flex-wrap:wrap;
 }
 
-.blog-card{
+.blog-cards{
   display:flex;
   max-width:90%;
   margin:0 auto;
 }
 
+.blog-card{
+  display:flex;
+}
 
 
+.faq-section{
+  display:flex;
+  justify-content:space-between;
+  background-color:#e9edff;
+  max-width:90%;
+  margin:0 auto;
+
+}
+
+.faq-content{
+  padding:20px;
+  max-width:42%;
+}
+
+.download-section{
+  display:flex;
+  justify-content:space-around;
+  margin-top:20px;
+}
+
+.footer-section{
+  display:flex;
+}
+
+.footer-left{
+  display:flex;
+}
+
+.footer-right{
+  display:flex;
+}
+
+input{
+ background-color:#e9edff;
+ width:400px;
+ height:40px;
+ border-radius:20px;
+}
+
+
+button{
+  background-color:#491bfe;
+}
+
+.download-email button{
+  padding:10px;
+  margin-top:25px;
+  width:120px;
+  border-radius:20px;
+}
