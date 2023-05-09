@@ -15,10 +15,14 @@ header{
 }
 
 nav{
+  display:flex;
   max-width:90%;
   margin:10px auto;
-
+  justify-content:space-between;
+  align-items:center;
+  padding:10px;
 }
+
 
 .header{
   display:flex;
@@ -26,6 +30,14 @@ nav{
   align-items:center;
   max-width:95%;
   margin:0 auto;
+}
+
+a{
+  margin-right:30px;
+  color:#ffffff;
+}
+svg{
+  width:20px;
 }
 
 .header-text{
@@ -38,7 +50,7 @@ nav{
 
 
 .header-image{
-  float:right;
+  max-width:80%;
 }
 
 .companies{
@@ -72,57 +84,114 @@ nav{
 
 .blog-cards{
   display:flex;
-  max-width:90%;
   margin:0 auto;
+  border:2px solid black;
+  justify-content:space-evenly;
+  flex-wrap:wrap;
 }
 
 .blog-card{
   display:flex;
+  background-color:#ffffff;
+  padding:10px;
+}
+
+.blog-image{
+  margin-right:30px;
+  padding:19px;
 }
 
 
+
+.blog-content{
+  padding:5px;
+}
+
 .faq-section{
   display:flex;
-  justify-content:space-between;
+  justify-content:space-around;
   background-color:#e9edff;
   max-width:90%;
   margin:0 auto;
-
+  padding:30px;
 }
 
 .faq-content{
   padding:20px;
-  max-width:42%;
+  max-width:40%;
 }
 
 .download-section{
   display:flex;
   justify-content:space-around;
   margin-top:20px;
+  flex-wrap:wrap;
+  padding:20px;
+}
+
+.download-email{
+  position:relative;
+  max-width:40%;
 }
 
 .footer-section{
   display:flex;
+  background-color:#491bfe;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  padding:30px;
 }
 
 .footer-left{
   display:flex;
+  flex-direction:column;
 }
 
 .footer-right{
   display:flex;
+  flex-direction:column;
+}
+
+.faq-image{
+  max-width:95%;
 }
 
 input{
  background-color:#e9edff;
- width:400px;
+ max-width:100%;
  height:40px;
  border-radius:20px;
+ padding:10px;
 }
 
+li{
+  list-decoration:none;
+}
+
+.footer-logo{
+  height:50px;
+  width:150px;
+}
+
+.list{
+  display:flex;
+  flex-wrap:wrap;
+}
+
+.list-items{
+  margin-right:20px;
+}
+
+.logos-list{
+  display:flex;
+  flex-wrap:wrap;
+}
 
 button{
   background-color:#491bfe;
+  color:#ffffff;
+  border:2px solid #e9edff;
+  padding:5px;
 }
 
 .download-email button{
@@ -130,4 +199,42 @@ button{
   margin-top:25px;
   width:120px;
   border-radius:20px;
+}
+
+.social{
+  margin-left:50px;
+}
+
+
+
+@media screen and (max-width:768px){
+.footer-section{
+  flex-direction:column;
+}
+.footer-left{
+  max-width:100%;
+  align-items:center;
+}
+.footer-right{
+  max-width:100%;
+  align-items:center;
+  margin-left:0px;
+}
+.blog-cards{
+  justify-content:space-between;
+}
+.header{
+  flex-direction:column;
+}
+
+.header-text{
+  max-width:100%;
+  order:2;
+}
+  
+}
+
+
+
+@media screen and (max-width:552px){
 }
