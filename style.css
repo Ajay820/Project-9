@@ -82,10 +82,20 @@ svg{
   flex-wrap:wrap;
 }
 
+.blog-heading{
+  max-width:80%;
+  margin:0 auto;
+}
+
+.api{
+  max-width:80%;
+  margin:0 auto;
+}
+
 .blog-cards{
   display:flex;
+  max-width:95%;
   margin:0 auto;
-  border:2px solid black;
   justify-content:space-evenly;
   flex-wrap:wrap;
 }
@@ -98,10 +108,11 @@ svg{
 
 .blog-image{
   margin-right:30px;
-  padding:19px;
 }
 
-
+.image{
+  max-width:85%;
+}
 
 .blog-content{
   padding:5px;
@@ -127,6 +138,10 @@ svg{
   margin-top:20px;
   flex-wrap:wrap;
   padding:20px;
+}
+
+.content{
+  max-width:40%;
 }
 
 .download-email{
@@ -227,6 +242,10 @@ button{
   flex-direction:column;
 }
 
+.blog-bottom{
+  max-width:90%;
+}
+
 .header-text{
   max-width:100%;
   order:2;
@@ -237,4 +256,17 @@ button{
 
 
 @media screen and (max-width:552px){
+  .blog-card{
+    flex-direction:column;
+  }
+  .blog-cards{
+    margin:0 auto;
+  }
+  .content{
+    max-width:90%;
+    margin:0 auto;
+  }
+  .blog-image{
+    margin-right:0px;
+  }
 }
